@@ -66,3 +66,7 @@ body {
     text-align: center;
     width: 20%;
 }
+
+form label {
+    color: white;
+}

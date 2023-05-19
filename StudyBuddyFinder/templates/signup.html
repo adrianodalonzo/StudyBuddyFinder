@@ -6,4 +6,12 @@
 
 {% block content %}
     <h1 class="heading">Sign Up Page</h1>
+    <form method="POST">
+        {{ form.csrf_token }}
+        {{ form.username.label }} {{ form.username() }}
+        {{ form.email.label }} {{ form.email() }}
+        {{ form.password.label }} {{ form.password() }}
+        {{ form.retype_password.label }} {{ form.retype_password() }}
+        <input type="submit" value="Login">
+    </form>
 {% endblock %}
