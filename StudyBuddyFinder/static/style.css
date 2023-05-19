@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,57,1) 16%, rgba(0,38,46,1) 100%);
+    font-family: 'Dosis', sans-serif;
+    height:100vh;
+    margin: 0;
+    --x: calc(var(--posX, 0) * 1px);
+    --y: calc(var(--posY, 0) * 1px);
+    background-image: 
+        radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
+        radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
+        radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+        linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+    background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+#main-nav div a {
+    color: white;
+    text-decoration: none;
+}
+
+#main-nav div {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+}
